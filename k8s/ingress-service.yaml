@@ -11,7 +11,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /api/?(.*)
+          - path: /?(.*)
             # UPDATE THIS LINE ABOVE
             backend:
               serviceName: server-cluster-ip-service
