@@ -18,8 +18,7 @@ app.get('/api', (req, res) => {
 
 app.get('/api/values/all', async (req, res) => {
   res.send({
-    host: keys.redisHost,
-    port: keys.redisPort,});
+    password: process.env.PGPASSWORD});
 });
 
 app.listen(5000, (err) => {
